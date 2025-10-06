@@ -1,0 +1,25 @@
+
+
+/* 🌊 Water Ripple Gradient Animation */
+@keyframes waterWave {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.water-animate {
+  background: linear-gradient(
+    120deg,
+    #080d29 0%,
+    var(--theme-color-01) 50%,
+    #080d29 100%
+  );
+  background-size: 200% 200%;
+  animation: waterWave 3s ease-in-out infinite;
+}
